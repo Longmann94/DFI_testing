@@ -1,0 +1,73 @@
+<html>
+
+	<head>
+		 <title>Hello</title>
+ 	</head>
+
+ 	<body>
+ 	    
+ 	    
+ 		<h1>PBS</h1>
+ 			<h2>IS MY MIDICATION ON THE GOVERMENT FUNDED LSIT ? </h2>
+<html dir="ltr" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Medicine Name</label>
+        <select class="form-control" id="search" placeholder="Medicine Name..."></select>
+      </div>
+      <div class="col-md-6" id="result">
+
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script>
+      var data = [
+        'Medicine 1',
+        'Medicine 2',
+        'Medicine 3',
+        'Medicine 4',
+        'Medicine 5',
+      ];
+
+      $('#search').select2({
+        tags: true,
+        createTag: function (params) {
+          return {
+            id: params.term,
+            text: params.term,
+            newOption: true
+          }
+        }
+      });
+      $.each(data, function( index, value ) {
+        $('#search').append('<option value="'+ value +'">'+ value +'</option>');
+      });
+      $( "#search" ).change(function() {
+        if($.inArray( $('#search').val() , data ) == 1)
+          $('#result').html(  $('#search').val() );
+        else {
+          $('#result').html(  'Soory No Result' );
+        }
+      });
+    </script>
+  </body>
+</html>
+
+ 				
+ 				<h2>about  PBS </h2>
+ 				<h2> Contact us  </h2>
+ 				
+ 				
+ 	</body>
+
+
+ 
