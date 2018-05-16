@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background:#e6e6e6;
+	margin:0;
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+}
+
+.indent{
+		padding:20px 10% 20px 10%;	
+}
+.banner 
+{
+	background:black;
+	margin:0;
+	width:80%;
+}
+
+.formRegion{
+    background: #ccc;
+    height: 80px;
+    width: 80%;
+}
+
+.arrow {
+    position: absolute;
+    top: 150px;
+}
+#arrowHint{
+	font-size:18px;
+	color:#067ca8;
+}
+form{
+	width:300px;
+	float:left;
+}
+
+input {
+	padding:14px 5px 14px 40px;
+	width:100%;
+	border-radius:5px;
+	font-size:18px;
+	
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999;
+	font-size:14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999;
+	font-size:14px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999;
+	font-size:14px;
+}
+
+button{
+    width: 300px;
+    border-radius: 5px;
+    padding: 15px 30px 12px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+button:hover{
+	background:#055c7c;
+}
+
+
+.btnImage{
+	margin-top:-5px;
+	float:left;
+}
+.teal{
+	background:#067ca8;
+}
+.darkBlue{
+	background:#272e3a;
+	
+}
+
+.hideit{
+	display:none;
+}
+
+.pull-right{
+	float:right;
+}
+#footer{
+    padding: 15px 10% 0 10%;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    color: #e6e6e6;
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+	}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+}
+
+
+/* portrait iPad*/
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+	
+}
+
+/* landscape  iPad*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+	
+}
+
+/* Portrait ipad Pro*/
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+
+}
+
