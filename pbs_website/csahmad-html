@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>PBS</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="DFI">
+	<link rel="apple-touch-icon" href="assets/img/iosIcon.png" />
+	<link rel="icon" sizes="192x192" href="assets/img/androidIcon.png" />
+		
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="assets/css/pbs.css" rel="stylesheet" type="text/css">
+	<script src="assets/scripts/jquery-3.3.1.min.js"></script>
+	<script>
+
+			function showRegion(select){
+				$("#"+select).toggle();
+			}
+			function hideArrow(){
+				$("#arrowHint").addClass('hideit');
+			}
+	</script>
+</head>
+<body>
+	<div class="banner indent darkBlue">
+		<img src="assets/img/dfi_logo.png" height="50px">
+	</div>
+	<div class="formRegion indent">
+		<form action="#" method="post">
+			<input id="searchMed" placeholder="enter medicine here" value="" alt="search area" onfocus="hideArrow()"/>
+		</form>
+		<button class="darkBlue pull-right" onclick="showRegion('pbsInfo')">
+			<img src="assets/img/info.png" width="30" height="30" alt="button image" class="btnImage" />
+			About PBS
+		</button>
+	</div>
+	
+	<div id="arrowHint" class="indent">
+		Type in here
+		<img src="assets/img/arrow.png" width="100" height="80" alt="" class="arrow"/>
+	</div>
+	<div id="results" class="indent"></div>
+	<div id="pbsInfo" class="indent hideit">
+		<h3>About the PBS</h3>
+		<p>Under the PBS, the government subsidises the cost of medicine for most medical conditions.  </p>
+		<p>On 1 January 2018, the Safety Net thresholds changed from $378.00 to $384.00 (for concession card holders) and from $1,494.90 to $1,521.80 (for all other patients)</p>
+	</div>
+	<div id="footer" class="darkBlue">
+		This is the footer
+	</div>
+</body>
+</html>
+
